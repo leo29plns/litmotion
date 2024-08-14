@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "node16",
+        "noImplicitAny": false,
+        "moduleResolution": "node16",
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*"]
+        },
+        "typeRoots": ["./node_modules/@types/"],
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true
+    },
+    "include": ["src/**/*.ts", "tests/**/*", "src/types/**/*.d.ts"],
+    "exclude": ["node_modules", "dist"]
+}

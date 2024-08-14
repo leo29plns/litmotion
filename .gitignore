@@ -1,13 +1,27 @@
+###> yarn/misc ###
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+###< yarn/misc ###
 
-# Swap the comments on the following lines if you wish to use zero-installs
-# In that case, don't forget to run `yarn config set enableGlobalCache false`!
-# Documentation here: https://yarnpkg.com/features/caching#zero-installs
-
-#!.yarn/cache
+###> node/misc ###
 .pnp.*
+node_modules
+###< node/misc ###
+
+###> app/projects ###
+projects/*
+!projects/.gitkeep
+###< app/projects ###
+
+###> app/misc ###
+.DS_Store
+.env
+###< app/misc ###
+
+###> typescript/build ###
+dist
+###< typescript/build ###
